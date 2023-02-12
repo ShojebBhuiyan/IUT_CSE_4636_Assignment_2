@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+    Welcome to the shop!
+    <form method="get" action="CartServlet">
+        Click here to view cart: <input type="submit" name="option" value="View Cart" />
+    </form>
+    <br>
+    <form method="post" action="CartServlet">
+        <table>
+            <thead>
+                <td>Item</td>
+                <td>Price</td>
+                <td>Quantity</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>100</td>
+                    <td><input type="number" name="A_Quantity" /></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>200</td>
+                    <td><input type="number" name="B_Quantity" /></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>300</td>
+                    <td><input type="number" name="C_Quantity" /></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>400</td>
+                    <td><input type="number" name="D_Quantity" /></td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>500</td>
+                    <td><input type="number" name="E_Quantity" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="submit" name="option" value="Checkout" />
+    </form>
+
+    <form action="AuthenticationControllerServlet">
+       Click here to sign out! <input type="submit" name="option" value="Signout" />
+    </form>
+</body>
+</html>
